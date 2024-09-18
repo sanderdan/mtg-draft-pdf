@@ -19,7 +19,7 @@ page[size="A4"] {
 	width: 21cm;
 	height: 29.7cm;
 	/*padding: 2cm 1cm 2cm 1cm;*/
-	padding: 1.5cm 1cm 0.8cm 1cm;
+	padding: 1cm 1cm 0.8cm 1cm;
 }
 @media print {
 	body,
@@ -70,16 +70,23 @@ header {
 	margin-left: 20px;
 }
 
-h1 {
+.title {
 	font-size: 32px;
+	line-height: 32px;
+	font-weight: bold;
+	text-align: center;
+}
+h1 {
+	font-size: 26px;
 	margin: 0;
 }
 h2 {
 	font-size: 15px;
 	text-wrap: nowrap;
 	margin: 0;
-	margin-bottom: 5px;
+	margin-bottom: 2px;
 }
+
 p {
 	margin: 0 0 10px 0;
 	font-size: 16px;
@@ -96,17 +103,13 @@ p {
 	flex-basis: auto;
 	flex-wrap: wrap;
 	margin-bottom: 10px;
+	gap: 5px;
 }
 .archetype {
-	width: 20%;
-	padding: 5px;
+	flex: 1;
 }
 .mechanic {
-	width: calc(100% / 6);
-	padding: 5px;
-}
-.mechanics-5 .mechanic {
-	width: calc(100% / 5);
+	flex: 1;
 }
 .archetype img,
 .mechanic img {
