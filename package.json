@@ -11,5 +11,11 @@
   },
   "devDependencies": {
     "browser-sync": "^3.0.2"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "fs": "^0.0.1-security",
+    "puppeteer": "^23.4.0"
   }
 }
